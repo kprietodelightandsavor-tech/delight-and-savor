@@ -281,7 +281,8 @@ nav {
 /* RESPONSIVE */
 @media (max-width:860px) {
   nav { padding:1rem 1.5rem; }
-  .nav-links { display:none; }
+  .nav-links a:not(.nav-cta) { display:none; }
+  .nav-cta { display:inline-block !important; }
   .hero, .about { grid-template-columns:1fr; }
   .philosophy { padding:4rem 1.5rem; }
   .phil-grid { grid-template-columns:1fr; }
@@ -304,9 +305,10 @@ nav {
   <div class="nav-links">
     <a href="#philosophy">Philosophy</a>
     <a href="#curriculum">Curriculum</a>
-    <a href="#substack">Journal</a>
-    <a href="#about">About</a>
-    <a href="https://the-delight-savor-press.shopify.com" target="_blank" class="nav-cta">Shop Now</a>
+    <a href="#coming">Coming Soon</a>
+    <a href="#substack">Field Notes</a>
+    <a href="#about">About Kim</a>
+    <a href="https://the-delight-savor-press.myshopify.com/" target="_blank" class="nav-cta">Shop Now</a>
   </div>
 </nav>
 
@@ -402,7 +404,7 @@ nav {
   <div class="units-grid">
 
     <div class="unit-bundle">
-      <a href="https://the-delight-savor-press.shopify.com" target="_blank" class="unit-card">
+      <a href="https://the-delight-savor-press.myshopify.com/" target="_blank" class="unit-card">
         <span class="unit-badge">Best Value</span>
         <p class="unit-tag">Complete Year One Bundle</p>
         <h3 class="unit-title">Macbeth + Wuthering Heights</h3>
@@ -423,7 +425,7 @@ nav {
       </a>
     </div>
 
-    <a href="https://the-delight-savor-press.shopify.com" target="_blank" class="unit-card">
+    <a href="https://the-delight-savor-press.myshopify.com/" target="_blank" class="unit-card">
       <p class="unit-tag">Fall Semester &mdash; Year One</p>
       <h3 class="unit-title">Macbeth</h3>
       <p class="unit-sub">William Shakespeare &mdash; High School (9&ndash;12)</p>
@@ -442,7 +444,7 @@ nav {
       <span class="btn-green">Shop Macbeth Unit</span>
     </a>
 
-    <a href="https://the-delight-savor-press.shopify.com" target="_blank" class="unit-card">
+    <a href="https://the-delight-savor-press.myshopify.com/" target="_blank" class="unit-card">
       <p class="unit-tag">Spring Semester &mdash; Year One</p>
       <h3 class="unit-title">Wuthering Heights</h3>
       <p class="unit-sub">Emily Bront&euml; &mdash; High School (9&ndash;12)</p>
@@ -465,7 +467,7 @@ nav {
 </section>
 
 <!-- COMING SOON -->
-<section class="coming">
+<section id="coming" class="coming">
   <div class="section-head">
     <p class="sec-eyebrow">On the horizon</p>
     <h2 class="sec-title">What's <em>Coming Next</em></h2>
@@ -557,7 +559,7 @@ nav {
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials">
+<section id="testimonials" class="testimonials">
   <div class="section-head">
     <p class="sec-eyebrow">What families are saying</p>
     <h2 class="sec-title">Words from the <em>Community</em></h2>
