@@ -273,6 +273,7 @@
   padding:1.2rem 1.6rem; transition:border-color 0.2s, transform 0.2s;
 }
 .ds-platform-card:hover { border-color:var(--green-sage); transform:translateX(4px); }
+a.ds-platform-card { text-decoration:none; color:inherit; }
 .ds-platform-icon {
   width:42px; height:42px; flex-shrink:0;
   background:var(--green-pale); border-radius:50%;
@@ -409,6 +410,41 @@
   .ds-about { gap:3rem; }
   .ds-platforms-layout { gap:3rem; }
 }
+
+/* ── FOOTER ── */
+.ds-footer {
+  background:var(--green); padding:3rem 5rem 2rem;
+  border-top:1px solid rgba(200,137,42,0.3);
+}
+.ds-footer-inner {
+  display:flex; justify-content:space-between; align-items:flex-start;
+  max-width:1100px; margin:0 auto; flex-wrap:wrap; gap:2rem;
+}
+.ds-footer-brand .ds-header-name { font-size:1.2rem; }
+.ds-footer-tagline {
+  font-family:'Jost',sans-serif; font-size:0.72rem; font-weight:300;
+  color:rgba(247,241,227,0.45); margin-top:0.3rem;
+}
+.ds-footer-links { display:flex; gap:2rem; flex-wrap:wrap; }
+.ds-footer-link {
+  font-family:'Jost',sans-serif; font-size:0.75rem; font-weight:400;
+  letter-spacing:0.12em; text-transform:uppercase;
+  color:rgba(247,241,227,0.65); text-decoration:none; transition:color 0.2s;
+}
+.ds-footer-link:hover { color:var(--parchment); }
+.ds-footer-bottom {
+  text-align:center; margin-top:2.5rem; padding-top:1.5rem;
+  border-top:1px solid rgba(247,241,227,0.1);
+}
+.ds-footer-copy {
+  font-family:'Jost',sans-serif; font-size:0.65rem; font-weight:300;
+  color:rgba(247,241,227,0.3); letter-spacing:0.05em;
+}
+@media (max-width:880px) {
+  .ds-footer { padding:2.5rem 2rem 1.5rem; }
+  .ds-footer-inner { flex-direction:column; align-items:center; text-align:center; }
+  .ds-footer-links { justify-content:center; }
+}
 </style>
 </head>
 <body>
@@ -425,9 +461,9 @@
   <nav class="ds-header-nav">
     <a href="#philosophy">Philosophy</a>
     <a href="#curriculum">Curriculum</a>
-    <a href="#substack">Journal</a>
+    <a href="https://substack.com/@yourname" target="_blank" rel="noopener">Journal</a>
     <a href="#about">About</a>
-    <a href="#curriculum" class="ds-header-cta">Shop Now</a>
+    <a href="https://yourstore.myshopify.com" target="_blank" rel="noopener" class="ds-header-cta">Shop Now</a>
   </nav>
 </header>
 
@@ -560,28 +596,28 @@
       <a href="#curriculum" class="ds-btn-primary">Start Here</a>
     </div>
     <div class="ds-platform-cards">
-      <div class="ds-platform-card">
+      <a href="https://yourstore.myshopify.com" target="_blank" rel="noopener" class="ds-platform-card">
         <div class="ds-platform-icon">📖</div>
         <div>
           <p class="ds-platform-title">Shopify Store</p>
           <p class="ds-platform-desc">Full curriculum units, companions, and printable resources ready to download.</p>
         </div>
         <span class="ds-rec">Shop</span>
-      </div>
-      <div class="ds-platform-card">
+      </a>
+      <a href="https://substack.com/@yourname" target="_blank" rel="noopener" class="ds-platform-card">
         <div class="ds-platform-icon">✉️</div>
         <div>
           <p class="ds-platform-title">Substack Journal</p>
           <p class="ds-platform-desc">Essays on slow education, living books, and life on our Texas ranch.</p>
         </div>
-      </div>
-      <div class="ds-platform-card">
+      </a>
+      <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener" class="ds-platform-card">
         <div class="ds-platform-icon">📱</div>
         <div>
           <p class="ds-platform-title">Instagram</p>
           <p class="ds-platform-desc">Daily glimpses of our homeschool table, co-op classroom, and ranch life.</p>
         </div>
-      </div>
+      </a>
       <div class="ds-platform-card">
         <div class="ds-platform-icon">🏫</div>
         <div>
@@ -601,10 +637,7 @@
     <h2 class="ds-section-title">The Delight &amp; Savor <em>Journal</em></h2>
     <p class="ds-section-body">Essays on slow education, living books, the beautifully imperfect work of raising readers, and life on our fifteen-acre Texas ranch. Join thousands of homeschool families on Substack.</p>
   </div>
-  <div class="ds-substack-form">
-    <input class="ds-substack-input" type="email" placeholder="Your email address" />
-    <button class="ds-substack-btn">Subscribe</button>
-  </div>
+  <a href="https://substack.com/@yourname" target="_blank" rel="noopener" class="ds-btn-primary" style="font-size:0.8rem;">Subscribe on Substack</a>
   <div class="ds-substack-posts">
     <div class="ds-substack-post">
       <p class="ds-substack-post-cat">Charlotte Mason</p>
@@ -678,6 +711,24 @@
     <button class="ds-signup-btn">Join the Community</button>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="ds-footer">
+  <div class="ds-footer-inner">
+    <div class="ds-footer-brand">
+      <span class="ds-header-name">Delight &amp; Savor</span>
+      <p class="ds-footer-tagline">Charlotte Mason Literature Curriculum</p>
+    </div>
+    <div class="ds-footer-links">
+      <a href="https://yourstore.myshopify.com" target="_blank" rel="noopener" class="ds-footer-link">Shopify Store</a>
+      <a href="https://substack.com/@yourname" target="_blank" rel="noopener" class="ds-footer-link">Substack</a>
+      <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener" class="ds-footer-link">Instagram</a>
+    </div>
+  </div>
+  <div class="ds-footer-bottom">
+    <p class="ds-footer-copy">&copy; 2026 Delight &amp; Savor. All rights reserved.</p>
+  </div>
+</footer>
 
 </div>
 </body>
