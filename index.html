@@ -19,8 +19,8 @@
   --cream-warm:   #f5efe3;
   --parchment:    #f7f1e3;
   --text-dark:    #1e1a14;
-  --text-mid:     #3d3526;
-  --text-light:   #6b6355;
+  --text-mid:     #2e2a1f;
+  --text-light:   #4a4438;
 }
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 body { font-family:'Libre Baskerville', Georgia, serif; color:var(--text-dark); background:var(--cream); }
@@ -139,7 +139,7 @@ nav {
 .phil-card:hover { border-top-color:var(--green-mid); }
 .phil-num { font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:var(--green-sage); opacity:0.55; margin-bottom:0.5rem; line-height:1; }
 .phil-title { font-family:'Cormorant Garamond',serif; font-size:1.2rem; font-style:italic; color:var(--green); margin-bottom:0.6rem; }
-.phil-desc { font-family:'Jost',sans-serif; font-size:0.76rem; font-weight:300; color:var(--text-light); line-height:1.8; }
+.phil-desc { font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:var(--text-light); line-height:1.85; }
 .phil-banner { background:var(--green); padding:2.5rem 3.5rem; display:flex; align-items:center; justify-content:space-between; gap:3rem; flex-wrap:wrap; }
 .phil-banner-text { font-family:'Cormorant Garamond',serif; font-size:1.35rem; font-style:italic; font-weight:300; color:var(--parchment); line-height:1.6; max-width:680px; }
 .phil-banner-text em { color:var(--amber-light); font-style:normal; }
@@ -159,7 +159,7 @@ nav {
   color:var(--green); line-height:1.15; margin-bottom:0.7rem;
 }
 .sec-title em { font-style:italic; color:var(--amber); }
-.sec-body { font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; line-height:1.9; color:var(--text-light); max-width:540px; margin:0 auto; }
+.sec-body { font-family:'Jost',sans-serif; font-size:0.95rem; font-weight:300; line-height:1.9; color:var(--text-light); max-width:540px; margin:0 auto; }
 
 /* CURRICULUM */
 .curriculum { background:var(--green-pale); padding:6rem 5rem; }
@@ -185,7 +185,7 @@ nav {
 .unit-tag { font-family:'Jost',sans-serif; font-size:0.62rem; font-weight:300; letter-spacing:0.22em; text-transform:uppercase; color:var(--green-mid); margin-bottom:0.7rem; }
 .unit-title { font-family:'Cormorant Garamond',serif; font-size:1.9rem; font-weight:400; color:var(--green); line-height:1.15; margin-bottom:0.3rem; }
 .unit-sub { font-family:'Cormorant Garamond',serif; font-size:0.95rem; font-style:italic; color:var(--text-light); margin-bottom:1rem; }
-.unit-desc { font-family:'Jost',sans-serif; font-size:0.8rem; font-weight:300; line-height:1.8; color:var(--text-light); margin-bottom:1.5rem; }
+.unit-desc { font-family:'Jost',sans-serif; font-size:0.9rem; font-weight:300; line-height:1.85; color:var(--text-light); margin-bottom:1.5rem; }
 .unit-features { list-style:none; margin-bottom:1.5rem; }
 .unit-features li {
   font-family:'Jost',sans-serif; font-size:0.74rem; font-weight:300;
@@ -218,7 +218,7 @@ nav {
 .coming-label::after { content:'Soon'; background:var(--green-pale); color:var(--green-mid); padding:0.15rem 0.45rem; font-size:0.52rem; margin-left:auto; }
 .coming-title { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:400; color:var(--green); line-height:1.2; margin-bottom:0.25rem; }
 .coming-sub { font-family:'Cormorant Garamond',serif; font-size:0.88rem; font-style:italic; color:var(--text-light); margin-bottom:1rem; }
-.coming-details { font-family:'Jost',sans-serif; font-size:0.72rem; font-weight:300; color:var(--text-light); line-height:1.8; }
+.coming-details { font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:var(--text-light); line-height:1.85; }
 
 /* SUBSTACK */
 .substack { background:var(--green); padding:5rem; text-align:center; }
@@ -252,7 +252,7 @@ nav {
 .about-text .sec-eyebrow::before { display:none; }
 .about-text .sec-title { text-align:left; }
 .about-text .sec-title em { color:var(--green-mid); }
-.about-body { font-family:'Jost',sans-serif; font-size:0.84rem; font-weight:300; line-height:1.95; color:var(--text-mid); margin:0.85rem 0; }
+.about-body { font-family:'Jost',sans-serif; font-size:0.95rem; font-weight:300; line-height:1.95; color:var(--text-mid); margin:0.85rem 0; }
 .about-pull { font-family:'Cormorant Garamond',serif; font-size:1.18rem; font-style:italic; color:var(--green); border-left:3px solid var(--amber); padding-left:1.2rem; margin:1.5rem 0; line-height:1.65; }
 .about-values { display:flex; gap:0.6rem; flex-wrap:wrap; margin:1.5rem 0 2rem; }
 .about-value { font-family:'Jost',sans-serif; font-size:0.63rem; font-weight:300; letter-spacing:0.1em; text-transform:uppercase; border:1px solid var(--green-light); color:var(--green-mid); padding:0.3rem 0.8rem; }
@@ -510,20 +510,37 @@ nav {
     <input class="sub-input" type="email" placeholder="Your email address" />
     <button class="sub-btn" onclick="window.open('https://substack.com/@delightandsavor','_blank')">Subscribe</button>
   </div>
-  <div class="sub-posts">
-    <div class="sub-post">
-      <p class="sub-cat">Charlotte Mason</p>
-      <h4>Why Narration Is the Missing Piece in Most Language Arts Programs</h4>
-    </div>
-    <div class="sub-post">
-      <p class="sub-cat">Living Books</p>
-      <h4>How to Choose a Living Book (And Why It Matters More Than You Think)</h4>
-    </div>
-    <div class="sub-post">
-      <p class="sub-cat">Ranch &amp; Home</p>
-      <h4>Educating on Fifteen Acres: When the Barn Is Also a Classroom</h4>
+  <div id="substack-posts" class="sub-posts">
+    <div class="sub-post" style="grid-column:1/-1;text-align:center;padding:2rem;">
+      <p class="sub-cat">Loading latest posts...</p>
     </div>
   </div>
+  <script>
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://substack.com/@delightandsavor/feed')
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('substack-posts');
+        if (!data.items || data.items.length === 0) {
+          container.innerHTML = '<div class="sub-post" style="grid-column:1/-1;text-align:center;"><p class="sub-cat">Visit our Substack to read the latest essays.</p></div>';
+          return;
+        }
+        container.innerHTML = data.items.slice(0, 3).map(item => {
+          const cat = item.categories && item.categories[0] ? item.categories[0] : 'From the Journal';
+          return `<div class="sub-post">
+            <p class="sub-cat">${cat}</p>
+            <a href="${item.link}" target="_blank" style="text-decoration:none;">
+              <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--parchment);line-height:1.45;transition:color 0.2s;" onmouseover="this.style.color='#e0a94a'" onmouseout="this.style.color='#f7f1e3'">${item.title}</h4>
+            </a>
+          </div>`;
+        }).join('');
+      })
+      .catch(() => {
+        document.getElementById('substack-posts').innerHTML = `
+          <div class="sub-post"><p class="sub-cat">Charlotte Mason</p><a href="https://substack.com/@delightandsavor" target="_blank" style="text-decoration:none;"><h4 style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--parchment);line-height:1.45;">Why Narration Is the Missing Piece in Most Language Arts Programs</h4></a></div>
+          <div class="sub-post"><p class="sub-cat">Living Books</p><a href="https://substack.com/@delightandsavor" target="_blank" style="text-decoration:none;"><h4 style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--parchment);line-height:1.45;">How to Choose a Living Book (And Why It Matters More Than You Think)</h4></a></div>
+          <div class="sub-post"><p class="sub-cat">Ranch &amp; Home</p><a href="https://substack.com/@delightandsavor" target="_blank" style="text-decoration:none;"><h4 style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--parchment);line-height:1.45;">Educating on Fifteen Acres: When the Barn Is Also a Classroom</h4></a></div>`;
+      });
+  </script>
 </section>
 
 <!-- ABOUT -->
